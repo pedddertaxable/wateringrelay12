@@ -27,7 +27,8 @@ let RunCount = 0
 WaterTime = 2 * 60 * 1000
 WaterInterval = 12 * 60 * 60 * 1000 - WaterTime
 RelayTrigger = 10000
-basic.forever(function () {
+basic.pause(5000)
+while (true) {
     pins.digitalWritePin(DigitalPin.P1, 0)
     basic.pause(RelayTrigger)
     pins.digitalWritePin(DigitalPin.P1, 1)
@@ -37,4 +38,5 @@ basic.forever(function () {
     pins.digitalWritePin(DigitalPin.P2, 1)
     RunCount += 1
     basic.pause(WaterInterval)
-})
+    WaterTime += 10000
+}
