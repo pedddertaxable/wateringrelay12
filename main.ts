@@ -25,7 +25,7 @@ pins.digitalWritePin(DigitalPin.P1, 1)
 pins.digitalWritePin(DigitalPin.P2, 1)
 let RunCount = 0
 WaterTime = 2 * 60 * 1000
-WaterInterval = 12 * 60 * 60 * 1000 - WaterTime
+WaterInterval = 24 * 60 * 60 * 1000 - WaterTime
 RelayTrigger = 10000
 basic.pause(5000)
 while (true) {
