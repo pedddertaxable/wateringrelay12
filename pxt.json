@@ -1,5 +1,5 @@
 {
-    "name": "WateringRelay1.4",
+    "name": "WateringRelay1.5",
     "description": "",
     "dependencies": {
         "core": "*",
@@ -15,6 +15,10 @@
     "testFiles": [
         "test.ts"
     ],
+    "targetVersions": {
+        "target": "5.0.12",
+        "targetId": "microbit"
+    },
     "supportedTargets": [
         "microbit"
     ],
